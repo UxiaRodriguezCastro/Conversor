@@ -24,7 +24,12 @@ public class Lonxitude {
         int respuesta= escaner.nextInt();
         String fin=""+respuesta;
         if(!fin.equals("0")){
-            System.out.println("AQUI INICIA EL SEGUNDO MENU");
+            System.out.println("");
+            System.out.println("CONVERSOR");
+            System.out.println("");
+            System.out.println("1. Transformar Kms a Millas\n"+"\n" +"2. Transformar Millas a Kms\n"+"\n"+"3. Transformar Millas a Pulgadas\n"+"\n"+"4. Transformar Pulgadas a Millas\n"+"\n"+"0. Volver ó menú anterior");
+          
+           
         }
     }
     
