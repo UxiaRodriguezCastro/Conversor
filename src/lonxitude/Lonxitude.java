@@ -61,6 +61,6 @@ public class Lonxitude {
 
             }
         }
-        }while(fin!="0");
+        }while(!"0".equals(fin));
     }
 }
