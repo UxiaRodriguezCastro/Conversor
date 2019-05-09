@@ -7,7 +7,7 @@ public class Clase_Lonxitude {
   
       public Clase_Lonxitude() {
     }   
-        public static void Lonxituderesultado (int r){
+        public void Lonxituderesultado (int r){
             Scanner leer=new Scanner (System.in);
             int OP=r;
             switch (OP){
