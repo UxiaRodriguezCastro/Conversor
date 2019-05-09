@@ -18,20 +18,41 @@ public class Lonxitude {
      */
     public static void main(String[] args) {
 
-        System.out.println("Menu:");
-        System.out.println("1.Conversor");
-        System.out.println("0. Salir");
-        Scanner escaner= new Scanner(System.in);
-        int respuesta= escaner.nextInt();
-        String fin=""+respuesta;
-        if(!fin.equals("0")){
-            System.out.println("");
-            System.out.println("CONVERSOR");
-            System.out.println("");
-            System.out.println("1. Transformar Kms a Millas\n"+"\n" +"2. Transformar Millas a Kms\n"+"\n"+"3. Transformar Millas a Pulgadas\n"+"\n"+"4. Transformar Pulgadas a Millas\n"+"\n"+"0. Volver ó menú anterior");
-          
-           
+        System.out.println("MENÚ:");
+        System.out.println("1.LONGITUD");
+        System.out.println("2.TEMPERATURA");
+        System.out.println("3.POTENCIA");
+        System.out.println("0.SALIR");
+        Scanner escaner = new Scanner(System.in);
+        int respuesta = escaner.nextInt();
+        String fin = "" + respuesta;
+        if (!fin.equals("0")) {
+            if (fin.equals("1")) {
+                System.out.println("");
+                System.out.println("LONGITUD:");
+                System.out.println("");
+                System.out.println("Elije una opción:");
+                System.out.println("");
+                System.out.println("1.Transformar Kms a Millas\n"+"2.Transformar Millas a Kms\n"+"3.Transformar Millas a Pulgadas\n"+"4.Transformar Pulgadas a Millas\n"+"0.Volver ó menú anterior");
+            }
+            if (fin.equals("2")) {
+                System.out.println("");
+                System.out.println("TEMPERATURA:");
+                System.out.println("");
+                System.out.println("Elije una opción:");
+                System.out.println("");
+                System.out.println("1.Celsius a Fahrenheit\n"+"2.Fahrenheit a Celsius\n"+"3.Celsius a Kelvin\n"+"4.Kelvin a Celsius"+"0.Volver ó menú anterior");
+
+            }
+            if (fin.equals("3")) {
+                System.out.println("");
+                System.out.println("POTENCIA:");
+                System.out.println("");
+                System.out.println("Elije una opción:");
+                System.out.println("");
+                System.out.println("1.KW a CV\n"+"2.CV a KW\n"+"3.KW a Ft/Lb\n"+"4.Ft/Lb a KW\n"+"0.Volver ó menú anterior");
+
+            }
         }
     }
-    
 }
