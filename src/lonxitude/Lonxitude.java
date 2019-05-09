@@ -17,6 +17,8 @@ public class Lonxitude {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        String fin = "" ;
+        do{
         Clase_Lonxitude a= new Clase_Lonxitude();
         System.out.println("MENÚ:");
         System.out.println("1.LONGITUD");
@@ -25,17 +27,20 @@ public class Lonxitude {
         System.out.println("0.SALIR");
         Scanner escaner = new Scanner(System.in);
         int respuesta = escaner.nextInt();
-        String fin = "" + respuesta;
+        fin = "" + respuesta;
         if (!fin.equals("0")) {
             if (fin.equals("1")) {
+                int r=1;
+                do{
                 System.out.println("");
                 System.out.println("LONGITUD:");
                 System.out.println("");
                 System.out.println("Elije una opción:");
                 System.out.println("");
                 System.out.println("1.Transformar Kms a Millas\n"+"2.Transformar Millas a Kms\n"+"3.Transformar Millas a Pulgadas\n"+"4.Transformar Pulgadas a Millas\n"+"0.Volver ó menú anterior");
-                int r= escaner.nextInt();
+                r= escaner.nextInt();
                 a.Lonxituderesultado(r);
+                }while (r>0&&r<5);
             }
             if (fin.equals("2")) {
                 System.out.println("");
@@ -56,5 +61,6 @@ public class Lonxitude {
 
             }
         }
+        }while(fin!="0");
     }
 }
