@@ -16,7 +16,7 @@ public class Calse_Potencia {
     }   
         public void Potenciaresultado (int r){
             Scanner leer=new Scanner (System.in);
-            double KW, CV, RES;
+            double KW, CV,Ft/Lb, RES;
             int OP=r;
             switch (OP){
             case 1:
@@ -33,7 +33,20 @@ public class Calse_Potencia {
                 RES = CV / 1.341;
                 System.out.println( "El resultado es: "+RES+" KW " );
                 break;
-      
+             case 3:
+                System.out.println( "KW a Ft/Lb" );
+                System.out.println( "Ingrese los KW" );
+                KW = leer.nextDouble();
+                RES = KW * 44253.73;
+                System.out.println( "El resultado es: "+RES+" Ft/Lb" );
+                break;
+            case 4:
+                System.out.println( "Ft/Lb a KW" );
+                System.out.println( "Ingrese las Ft/Lb" );
+                Ft/Lb = leer.nextInt();
+                RES = Ft/Lb / 44253.73;
+                System.out.println( "El resultado es: "+RES+" KW " );
+                break;
         }
         }
 
