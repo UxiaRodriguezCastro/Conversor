@@ -11,8 +11,8 @@ import java.util.Scanner;
  *
  * @author DAM133
  */
-public class Calse_Potencia {
-     public Calse_Potencia() {
+public class Clase_Potencia {
+     public Clase_Potencia() {
     }   
         public void Potenciaresultado (int r){
             Scanner leer=new Scanner (System.in);
@@ -21,14 +21,14 @@ public class Calse_Potencia {
             switch (OP){
             case 1:
                 System.out.println( "KW a CV" );
-                System.out.println( "Ingrese las CV" );
+                System.out.println( "Ingrese los KW" );
                 KW = leer.nextDouble();
                 RES = KW * 1.341;
                 System.out.println( "El resultado es: "+RES+" CV" );
                 break;
             case 2:
                 System.out.println( "CV a KW" );
-                System.out.println( "Ingrese las CV" );
+                System.out.println( "Ingrese los CV" );
                 CV = leer.nextDouble();
                 RES = CV / 1.341;
                 System.out.println( "El resultado es: "+RES+" KW " );

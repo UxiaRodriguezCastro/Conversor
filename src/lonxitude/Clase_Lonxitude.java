@@ -14,7 +14,7 @@ public class Clase_Lonxitude {
             switch (OP){
             case 1:
                 System.out.println( "Kms a Millas" );
-                System.out.println( "Ingrese las kms" );
+                System.out.println( "Ingrese los kms" );
                 kms = leer.nextDouble();
                 RES = kms / 1.609;
                 System.out.println( "El resultado es: "+RES+" Millas" );

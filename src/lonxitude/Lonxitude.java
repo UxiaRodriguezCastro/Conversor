@@ -20,6 +20,8 @@ public class Lonxitude {
         String fin = "" ;
         do{
         Clase_Lonxitude a= new Clase_Lonxitude();
+        Clase_Potencia b= new Clase_Potencia();
+        Clase_Temperatura c= new Clase_Temperatura();
         System.out.println("MENÚ:");
         System.out.println("1.LONGITUD");
         System.out.println("2.TEMPERATURA");
@@ -41,24 +43,35 @@ public class Lonxitude {
                 r= escaner.nextInt();
                 a.Lonxituderesultado(r);
                 }while (r>0&&r<5);
+                System.out.println("");
             }
             if (fin.equals("2")) {
+                int r=1;
+                do{
                 System.out.println("");
                 System.out.println("TEMPERATURA:");
                 System.out.println("");
                 System.out.println("Elije una opción:");
                 System.out.println("");
-                System.out.println("1.Celsius a Fahrenheit\n"+"2.Fahrenheit a Celsius\n"+"3.Celsius a Kelvin\n"+"4.Kelvin a Celsius"+"0.Volver ó menú anterior");
-
+                System.out.println("1.Celsius a Fahrenheit\n"+"2.Fahrenheit a Celsius\n"+"3.Celsius a Kelvin\n"+"4.Kelvin a Celsius\n"+"0.Volver ó menú anterior");
+                r= escaner.nextInt();
+                b.Potenciaresultado(r);
+                }while (r>0&&r<5);
+                System.out.println("");
             }
             if (fin.equals("3")) {
+                 int r=1;
+                do{
                 System.out.println("");
                 System.out.println("POTENCIA:");
                 System.out.println("");
                 System.out.println("Elije una opción:");
                 System.out.println("");
                 System.out.println("1.KW a CV\n"+"2.CV a KW\n"+"3.KW a Ft/Lb\n"+"4.Ft/Lb a KW\n"+"0.Volver ó menú anterior");
-
+                r= escaner.nextInt();
+                c.Temperaturaresultado(r);
+                }while (r>0&&r<5);
+                System.out.println("");
             }
         }
         }while(!"0".equals(fin));
