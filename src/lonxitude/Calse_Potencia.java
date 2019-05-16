@@ -1,4 +1,4 @@
-/*
+ /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -16,7 +16,7 @@ public class Calse_Potencia {
     }   
         public void Potenciaresultado (int r){
             Scanner leer=new Scanner (System.in);
-            double KW, CV,Ft/Lb, RES;
+            double KW, CV,FtLb, RES;
             int OP=r;
             switch (OP){
             case 1:
@@ -43,8 +43,8 @@ public class Calse_Potencia {
             case 4:
                 System.out.println( "Ft/Lb a KW" );
                 System.out.println( "Ingrese las Ft/Lb" );
-                Ft/Lb = leer.nextInt();
-                RES = Ft/Lb / 44253.73;
+                FtLb = leer.nextInt();
+                RES = FtLb / 44253.73;
                 System.out.println( "El resultado es: "+RES+" KW " );
                 break;
         }
