@@ -188,11 +188,18 @@ public class Clase_Potencia {
                         case 3:
                             System.out.println("CV");
                             RES = MW / 735498.75;
-                            
+                            System.out.println("El resultado es: "+RES);
+                            break;
                         case 4:
                             System.out.println("CF");
+                            RES = MW / 1.34102e-6;
+                            System.out.println("El resultado es: "+RES);
+                            break;
                         case 5:
                             System.out.println("Pié/Libra");
+                            RES = MW / 1341.02;
+                            System.out.println("El resultado es: "+RES);
+                            break;
                     }
                     break;
                 } while (Unidad != 9);
@@ -207,14 +214,29 @@ public class Clase_Potencia {
                     switch (OP) {
                         case 1:
                             System.out.println("Vatios");
+                            RES = PL / 0.7376;
+                            System.out.println("El resultado es: "+RES);
+                            break;
                         case 2:
                             System.out.println("KW");
+                            RES = PL / 737.56;
+                            System.out.println("El resultado es: "+RES);
+                            break;
                         case 3:
                             System.out.println("CV");
+                            RES = PL / 542.48;
+                            System.out.println("El resultado es: "+RES);
+                            break;
                         case 4:
                             System.out.println("CF");
+                            RES = PL / 550;
+                            System.out.println("El resultado es: "+RES);
+                            break;
                         case 5:
                             System.out.println("MW");
+                            RES = PL * 1341.02;
+                            System.out.println("El resultado es: "+RES);
+                            break;
                     }
                     break;
                 } while (Unidad != 9);
